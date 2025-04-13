@@ -9,6 +9,8 @@ import ShovPage from "./projects/ShovPage.tsx";
 import PsychoPage from "./projects/PsychoPage.tsx";
 import TogetherPage from "./projects/TogetherPage.tsx";
 import BasaPage from "./projects/BasaPage.tsx";
+import About from "./About.tsx";
+import Contacts from "./Contacts.tsx";
 
 const router = createBrowserRouter([
     {
@@ -19,8 +21,8 @@ const router = createBrowserRouter([
             { path: "project/psycho", Component: PsychoPage },
             { path: "project/together", Component: TogetherPage },
             { path: "project/baza", Component: BasaPage },
-            { path: "about", Component: MainPage },
-            { path: "contacts", Component: MainPage },
+            { path: "about", Component: About },
+            { path: "contacts", Component: Contacts },
         ]
     },
     { path: "/portfolio/project/site", Component: NoizePage },

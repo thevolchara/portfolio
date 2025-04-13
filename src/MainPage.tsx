@@ -1,6 +1,6 @@
-import Header from "./Header.tsx";
 import Alena from "./assets/index-page/Alena.jpg";
 import Projects from "./projects/Projects.tsx";
+import HeaderNoHamburger from "./HeaderNoHamburger.tsx";
 function MainPage() {
     const hrStyle = {
         height: '2px',
@@ -19,7 +19,7 @@ function MainPage() {
     return(
         <div>
             <div style={rowStyle}>
-                <Header/>
+                <HeaderNoHamburger/>
             </div>
             <hr style={hrStyle}/>
             <div style={rowStyle}>

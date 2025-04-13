@@ -6,7 +6,7 @@ const HamburgerMenu = () => {
     const startPath = "/portfolio/project";
     const links = [
         {path:`${startPath}/shov`,header:"''Шов+Шов''"},
-        {path:`${startPath}/site`, header:"''Сайт-визитка''"},
+        {path:`${startPath}/site`, header:"Сайт-визитка"},
         {path:`${startPath}/psycho`, header:"''ЯПсихолог''"},
         {path:`${startPath}/together`, header:"''ВМесте''"},
         {path:`${startPath}/baza`, header:"''БАЗА''"}
@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
                 <ul>
                     <ul>
                         {links.map((link) => (
-                            <li onClick={closeMenu}><Link to={link.path}>{link.header}</Link></li>
+                            <li key={link.header} onClick={closeMenu}><Link to={link.path}>{link.header}</Link></li>
                         ))}
                     </ul>
                 </ul>

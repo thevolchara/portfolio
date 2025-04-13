@@ -3,21 +3,23 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router";
+import MainPage from "./MainPage.tsx";
+import NoizePage from "./NoizePage.tsx";
 
 const router = createBrowserRouter([
     {
         path: "/portfolio", Component: App,
         children:[
-            { path: "", Component: App },
-            { path: "project/shov", Component: App },
-            { path: "project/site", Component: App },
-            { path: "project/psycho", Component: App },
-            { path: "project/together", Component: App },
-            { path: "project/baza", Component: App },
-            { path: "about", Component: App },
-            { path: "contacts", Component: App },
+            { path: "", Component: MainPage },
+            { path: "project/shov", Component: MainPage },
+            { path: "project/psycho", Component: MainPage },
+            { path: "project/together", Component: MainPage },
+            { path: "project/baza", Component: MainPage },
+            { path: "about", Component: MainPage },
+            { path: "contacts", Component: MainPage },
         ]
     },
+    { path: "/portfolio/project/site", Component: NoizePage },
 ]);
 
 createRoot(document.getElementById('root')!).render(

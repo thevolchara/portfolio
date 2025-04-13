@@ -1,12 +1,8 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "GT Walsheim Pro", sans-serif;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  white-space: nowrap;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +10,6 @@
 }
 
 a {
-  font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -24,10 +19,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+p{
+  text-wrap: wrap;
 }
 
 h1 {
@@ -49,20 +44,12 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+.fs64{ font-size: 36px; font-weight: 500; letter-spacing: 4px; line-height: 100%}
+.fs42Medium{ font-size: 42px; font-weight: 500; letter-spacing: 4px; line-height: 100%}
+.fs42{ font-size: 42px; font-weight: 400; letter-spacing: 4px; line-height: 100%}
+.fs32{ font-size: 32px; font-weight: 500; letter-spacing: 4px; line-height: 100%}
+.fs24{ font-size: 24px; font-weight: 400; letter-spacing: 4px; line-height: 100%}
+.fs20Medium{ font-size: 20px; font-weight: 500; letter-spacing: 4px; line-height: 140%}
+.fs20{ font-size: 20px; font-weight: 400; letter-spacing: 4px; line-height: 140%; font-style: oblique}
+.fs15{ font-size: 15px; font-weight: 400; letter-spacing: 4px; line-height: 140%}

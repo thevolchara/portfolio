@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./HamburgerMenuBlack.css";
 import {Link} from "react-router";
 
-const HamburgerMenu = () => {
+const HamburgerMenuBlack = () => {
     const startPath = "/portfolio/project";
     const links = [
         {path:`${startPath}/shov`,header:"''Шов+Шов''"},
@@ -52,4 +52,4 @@ const HamburgerMenu = () => {
     );
 };
 
-export default HamburgerMenu;
+export default HamburgerMenuBlack;

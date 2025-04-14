@@ -2,7 +2,7 @@ import logoBlack from './assets/icon_and_logo/Logo_dark-theme.png'
 import {useNavigate} from "react-router";
 import HamburgerMenuBlack from "./HamburgerMenuBlack.tsx";
 
-function Header() {
+function HeaderBlack() {
     const navigate = useNavigate();
     return (
         <div className='d-flex justify-content-between' style={{padding: '20px 0'}}>
@@ -17,4 +17,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default HeaderBlack;

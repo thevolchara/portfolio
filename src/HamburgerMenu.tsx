@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./HamburgerMenu.css";
 import {Link} from "react-router";
 
-const HamburgerMenu = () => {
+function HamburgerMenu() {
     const startPath = "/portfolio/project";
     const links = [
         {path:`${startPath}/shov`,header:"''Шов+Шов''"},
-        {path:`${startPath}/site`, header:"Сайт-визитка"},
+        {path:`${startPath}/site`, header:"''Сайт-визитка''"},
         {path:`${startPath}/psycho`, header:"''ЯПсихолог''"},
         {path:`${startPath}/together`, header:"''ВМесте''"},
         {path:`${startPath}/baza`, header:"''БАЗА''"}
@@ -43,13 +43,13 @@ const HamburgerMenu = () => {
                 <ul>
                     <ul>
                         {links.map((link) => (
-                            <li key={link.header} onClick={closeMenu}><Link to={link.path}>{link.header}</Link></li>
+                            <li onClick={closeMenu}><Link to={link.path}>{link.header}</Link></li>
                         ))}
                     </ul>
                 </ul>
             </nav>
         </div>
     );
-};
+}
 
 export default HamburgerMenu;

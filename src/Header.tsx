@@ -1,6 +1,6 @@
 import logoBlack from './assets/logoBlack.svg'
-import HamburgerMenu from "./HamburgerMenu.tsx";
 import {useNavigate} from "react-router";
+import HamburgerMenuBlack from "./HamburgerMenuBlack.tsx";
 
 function Header() {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ function Header() {
                 <p className='fs24 link m-10-20' onClick={() => navigate("/portfolio/about")}>Обо мне</p>
                 <p className='fs24 link m-10-20' onClick={() => navigate("/portfolio/contacts")}>Контакты</p>
             </div>
-            <div style={{marginTop: '20px'}}><HamburgerMenu/></div>
+            <div style={{marginTop: '20px'}}><HamburgerMenuBlack/></div>
         </div>
     );
 }

@@ -1,7 +1,8 @@
 import logoBlack from './assets/logoBlack.svg'
 import {useNavigate} from "react-router";
+import HamburgerMenu from "./HamburgerMenu.tsx";
 
-function Header() {
+function HeaderNoHamburger() {
     const navigate = useNavigate();
     return (
         <div className='d-flex justify-content-between' style={{padding: '20px 0'}}>
@@ -11,9 +12,9 @@ function Header() {
                 <p className='fs24 link m-10-20' onClick={() => navigate("/portfolio/about")}>Обо мне</p>
                 <p className='fs24 link m-10-20' onClick={() => navigate("/portfolio/contacts")}>Контакты</p>
             </div>
-            <div></div>
+            <div style={{marginTop: '20px'}}><HamburgerMenu/></div>
         </div>
     );
 }
 
-export default Header;
+export default HeaderNoHamburger;

@@ -4,13 +4,13 @@ import './index.css'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router";
 import MainPage from "./MainPage.tsx";
-import NoizePage from "./projects/NoizePage.tsx";
 import ShovPage from "./projects/ShovPage.tsx";
 import PsychoPage from "./projects/PsychoPage.tsx";
 import TogetherPage from "./projects/TogetherPage.tsx";
 import BasaPage from "./projects/BasaPage.tsx";
 import About from "./About.tsx";
 import Contacts from "./Contacts.tsx";
+import BlackApp from "./BlackApp.tsx";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             { path: "contacts", Component: Contacts },
         ]
     },
-    { path: "/portfolio/project/site", Component: NoizePage },
+    { path: "/portfolio/project/site", Component: BlackApp },
 ]);
 
 createRoot(document.getElementById('root')!).render(

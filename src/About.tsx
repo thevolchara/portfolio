@@ -1,5 +1,6 @@
 import Header from "./Header.tsx";
 import heroban from "./assets/obomne-page/heroban.jpg";
+import logoGovna from "./assets/obomne-page/logo_ptd.jpg";
 function About() {
     const hrStyle = {
         height: '2px',
@@ -22,7 +23,7 @@ function About() {
             </div>
             <hr style={hrStyle}/>
             <div style={rowStyle}>
-                <img src={heroban} alt="heroban" style={{maxHeight: '136px', marginRight: '50px'}}/>
+                <img src={heroban} alt="heroban" style={{minWidth: '100%', marginLeft: '20px'}}/>
             </div>
             <br/>
             <br/>
@@ -38,13 +39,18 @@ function About() {
             <br/>
             <br/>
             <div style={rowStyle}>
-                <p className='fs42Medium'>Алёна Кононова</p>
-                <p className='fs20'>Мне 22 года, я живу в Санкт-Петербурге и занимаюсь UX/UI-дизайном. Сейчас учусь в
-                    СПБГУПТД на направлении
-                    09.03.03 "Прикладная информатика в дизайне" (бакалавриат).</p>
-                <p className='fs20'>За время учебы я создала множество проектов
-                    — от веб-сайтов до мобильных приложений. В этом портфолио вы сможете изучить некоторые из них и
-                    узнать, как я работаю над каждым этапом создания продукта.</p>
+                <div className='d-flex justify-content-between' style={{maxWidth: '1150px'}}>
+                    <div style={{maxWidth:'700px'}}>
+                        <p className='fs42Medium'>Алёна Кононова</p>
+                        <p className='fs20'>Мне 22 года, я живу в Санкт-Петербурге и занимаюсь UX/UI-дизайном. Сейчас учусь в
+                            СПБГУПТД на направлении
+                            09.03.03 "Прикладная информатика в дизайне" (бакалавриат).</p>
+                        <p className='fs20'>За время учебы я создала множество проектов
+                            — от веб-сайтов до мобильных приложений. В этом портфолио вы сможете изучить некоторые из них и
+                            узнать, как я работаю над каждым этапом создания продукта.</p>
+                    </div>
+                    <img src={logoGovna} alt='govno' style={{minWidth: '240px', height: "240px", marginLeft: '200px'}}/>
+                </div>
             </div>
             <br/>
             <br/>
@@ -60,7 +66,7 @@ function About() {
             <br/>
             <br/>
             <div style={rowStyle}>
-                <p className='fs32Medium'>Что я умею?</p>
+                <p className='fs32'>Что я умею?</p>
                 <p className='fs20'>Я сочетаю аналитический подход с креативностью, чтобы создавать удобные и красивые
                     интерфейсы.
                     Вот мои ключевые навыки:</p>
@@ -91,7 +97,7 @@ function About() {
             <br/>
             <br/>
             <div style={rowStyle}>
-                <p className='fs32Medium'>Мой путь в дизайне только начинается</p>
+                <p className='fs32'>Мой путь в дизайне только начинается</p>
                 <p className='fs20'>Я постоянно развиваюсь, регулярно практикуюсь и совершенствую свои навыки. Слежу за
                     трендами в области UX/UI-дизайна , изучаю новые инструменты и подходы. Моя цель — создавать
                     продукты, которые делают жизнь людей проще.</p>
@@ -111,7 +117,7 @@ function About() {
             <br/>
             <br/>
             <div style={rowStyle}>
-                <p className='fs32Medium'>Хотите поработать вместе?</p>
+                <p className='fs32'>Хотите поработать вместе?</p>
                 <p className='fs20'>Если вам нужен UX/UI-дизайнер или вы хотите обсудить один из моих проектов, напишите мне на почту: alena_kononova@internet.ru . Буду рада сотрудничеству и обратной связи!</p>
             </div>
             <br/>

@@ -26,7 +26,7 @@ function Contacts() {
                 <p className='fs20'>E: alena_kononova@internet.ru</p>
             </div>
             <div style={rowStyle}>
-                <p className='fs42Medium'>Контакты</p>
+                <p className='fs42Medium'>Соцсети</p>
                 <p className='fs20'>Вконтакте</p>
                 <p className='fs20'>Телеграм</p>
             </div>

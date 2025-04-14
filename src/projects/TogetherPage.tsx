@@ -5,6 +5,7 @@ import VMeste1 from "../assets/VMeste-page/VMeste_pic1.jpg";
 import VMeste2 from "../assets/VMeste-page/VMeste_pic2.jpg";
 import VMeste3 from "../assets/VMeste-page/VMeste_pic3.jpg";
 import VMeste4 from "../assets/VMeste-page/VMeste_pic4.jpg";
+import ScrollToTop from "react-scroll-to-top";
 
 function TogetherPage() {
     const navigate = useNavigate();
@@ -196,6 +197,7 @@ function TogetherPage() {
                             дизайна интерьера
                         </p>
                     </div>
+                    <ScrollToTop smooth />
                 </div>
             </div>
         </div>

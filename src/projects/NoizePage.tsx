@@ -2,6 +2,7 @@ import arrow from "../assets/icon_and_logo/arrow_white.svg";
 import {useNavigate} from "react-router";
 import noize from "../assets/noize-page/noize_pic1.jpg";
 import HeaderBlack from "../HeaderBlack.tsx";
+import ScrollToTop from "react-scroll-to-top";
 
 function NoizePage() {
     const navigate = useNavigate();
@@ -134,6 +135,9 @@ function NoizePage() {
                         </p>
                     </div>
                 </div>
+                <br/>
+                <br/>
+                <ScrollToTop smooth />
             </div>
         </div>
     );

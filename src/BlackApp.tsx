@@ -1,8 +1,8 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from "./Footer.tsx";
 import {useEffect, useState} from 'react';
 import NoizePage from "./projects/NoizePage.tsx";
+import FooterBlack from "./FooterBlack.tsx";
 
 const useReactPath = () => {
     const [path, setPath] = useState(window.location.pathname);
@@ -19,7 +19,7 @@ const useReactPath = () => {
     return path;
 };
 
-function App() {
+function BlackApp() {
     const [backImage, setBackImage] = useState({backgroundImage: ""});
     const path = useReactPath();
     useEffect(() => {
@@ -37,22 +37,24 @@ function App() {
     }
     return (
         <>
-            <div style={backImage}>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col col-12' style={{backgroundColor: '#1E1E1E'}}>
-                            <NoizePage/>
+            <div style={{backgroundColor: '#1E1E1E'}}>
+                <div style={backImage}>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col col-12' style={{backgroundColor: '#1E1E1E'}}>
+                                <NoizePage/>
+                            </div>
+                            <div style={{backgroundColor: 'transparent', height: '100px'}}></div>
                         </div>
-                        <div style={{backgroundColor: 'transparent', height: '100px'}}></div>
                     </div>
                 </div>
-            </div>
-            <div className='container'>
-                <hr style={hrStyle}/>
-                <Footer/>
+                <div className='container'>
+                    <hr style={hrStyle}/>
+                    <FooterBlack/>
+                </div>
             </div>
         </>
     )
 }
 
-export default App
+export default BlackApp

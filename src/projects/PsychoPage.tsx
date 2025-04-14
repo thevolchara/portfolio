@@ -5,6 +5,7 @@ import IPSy1 from "../assets/IPSy-page/IPSy_pic1.jpg";
 import IPSy2 from "../assets/IPSy-page/IPSy_pic2.jpg";
 import IPSy3 from "../assets/IPSy-page/IPSy_pic3.jpg";
 import IPSy4 from "../assets/IPSy-page/IPSy_pic4.jpg";
+import ScrollToTop from "react-scroll-to-top";
 
 function PsychoPage() {
     const navigate = useNavigate();
@@ -161,6 +162,7 @@ function PsychoPage() {
                     </div>
                 </div>
             </div>
+            <ScrollToTop smooth />
         </div>
     );
 }

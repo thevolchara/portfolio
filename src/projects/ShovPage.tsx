@@ -5,6 +5,7 @@ import pic2 from "../assets/shov-shov-page/shov_pic2.jpg"
 import pic3 from "../assets/shov-shov-page/shov_pic3.jpg"
 import pic4 from "../assets/shov-shov-page/shov_pic4.jpg"
 import {useNavigate} from "react-router";
+import ScrollToTop from "react-scroll-to-top";
 
 function ShovPage() {
     const navigate = useNavigate();
@@ -200,6 +201,7 @@ function ShovPage() {
                     </div>
                 </div>
             </div>
+            <ScrollToTop smooth />
         </div>
     );
 }

@@ -3,6 +3,7 @@ import arrow from "../assets/icon_and_logo/arrow_dark.svg";
 import {useNavigate} from "react-router";
 import baza1 from "../assets/baza-page/Baza_pic1.jpg";
 import baza2 from "../assets/baza-page/Baza_pic2.jpg";
+import ScrollToTop from "react-scroll-to-top";
 
 function BasaPage() {
     const navigate = useNavigate();
@@ -142,6 +143,7 @@ function BasaPage() {
                             Адаптивный сайт для школы шитья
                         </p>
                     </div>
+                    <ScrollToTop smooth />
                 </div>
             </div>
         </div>
